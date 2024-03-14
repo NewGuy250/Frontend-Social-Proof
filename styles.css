@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+}
+
+html {
+    background-image: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 40%, 70%;
+    background-position: left top, right bottom;
+}
+
+body {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+
+    width: 100%;
+}
+
+.social-proof {
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 10rem;
+}
+
+.top-section {
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin-bottom: 4rem;
+}
+
+.top-left {
+    display: flex;
+
+    flex-direction: column;
+
+    width: 355px;
+}
+
+h1 {
+    font-size: 50px;
+
+    color: hsl(300, 43%, 22%);
+
+    margin-bottom: 2rem;
+}
+
+.top-left p {
+    color: hsl(303, 10%, 53%);
+
+    line-height: 1.2rem;
+
+    font-weight: 500;
+}
+
+.top-right {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: ;
+}
+
+.rating {
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: left;
+    align-items: center;
+
+    column-gap: 0.3rem;
+
+    background-color: hsl(300, 24%, 96%);
+
+    border-radius: 5px;
+
+    height: 40px;
+    width: 384px;
+
+    padding: 0 1rem;
+
+    margin-bottom: 1rem;
+}
+
+.rating p {
+    margin-top: 4px;
+    margin-left: 2rem;
+
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+}
+
+
+.second {
+    margin-left: 2rem;
+}
+
+.third {
+    margin-left: 4rem;
+}
+
+
+.bottom-section {
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-evenly;
+
+    column-gap: 2rem;
+}
+
+.bottom-left,
+.bottom-middle,
+.bottom-right {
+    background-color: hsl(300, 43%, 22%);
+
+    width: 320px;
+    height: 215px;
+
+    border-radius: 6px;
+
+    padding: 2rem;
+}
+
+.user {
+    display: flex;
+
+    column-gap: 1.5rem;
+
+    align-items: center;
+
+    line-height: 1.3rem;
+
+    margin-bottom: 2rem;
+}
+.username {
+    color: #fff;
+
+    font-weight: 700;
+}
+.verified-buyer {
+    color: hsl(333, 80%, 67%);
+}
+
+.bottom-section img {
+    height: 40px;
+    width: 40px;
+
+    border-radius: 50%;
+}
+
+.description {
+    color: #fff;
+
+    line-height: 1.3rem;
+}
+
+.bottom-middle {
+    margin-top: 1rem;
+}
+
+.bottom-right {
+    margin-top: 2rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    html {
+        background-image: url("images/bg-pattern-top-mobile.svg"), url("images/bg-pattern-bottom-mobile.svg");
+    }
+
+    .top-section {
+        flex-direction: column;
+
+        margin-bottom: 1rem;
+    }
+
+    .top-right {
+        margin-top: 2rem;
+    }
+
+    .rating {
+        flex-direction: column;
+
+        width: 260px;
+        height: 70px;
+
+        justify-content: center;
+        align-items: left;
+    }
+
+    .rating p {
+        margin: 0;
+    }
+
+    .stars {
+        margin-bottom: 1rem;
+    }
+
+    .second,
+    .third {
+        margin-left: 0;
+    }
+
+    .bottom-section {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .bottom-middle,
+    .bottom-right {
+        margin-top: 1rem;
+    }
+}
